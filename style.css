@@ -1,0 +1,196 @@
+body {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 14px;
+}
+
+#mainpage {
+	min-height: 90%;
+}
+
+#aside, #bside {
+	float: left;
+	box-sizing: border-box;
+	max-height: 100%;
+    /*overflow-x: scroll;*/
+	margin-top: 12px;
+}
+
+#aside {
+	width: 34%;
+	position: fixed;
+	/* background-color: #222; */
+	height: 90%;
+}
+
+#bside {
+    /* width: 66%; */
+	border-left: 1px solid #dddddd;
+	text-align: center;
+	height: 92vh;
+	margin-left: 34%;
+	overflow: auto;
+}
+
+#bside .battler {
+	font-size: 14px;
+	line-height: 15px;
+	width: 140px;
+	height: 80px;
+	margin: 3px;
+	text-align: center;
+	display: inline-block;
+        /*background-color: #FFFFFF;*/
+	border-radius: 5px;
+	border: 1px solid #dddddd;
+}
+
+#bside .battler b {
+	width: 100%;
+	/*white-space: pre-line;*/
+	word-wrap: break-word;
+	white-space: pre-wrap;
+	word-break: break-all;
+	white-space: normal;
+}
+
+#bside .battler small {
+	font-size: 10px;
+	line-height: 22px;
+	white-space: pre-line;
+}
+
+#entryform {
+	text-align: center;
+	margin: 2px auto 5px;
+	height: 70px;
+}
+
+#entryform > .form-group {
+	width: 50%;
+    /* box-sizing: border-box; */
+	float: left;
+	display: block;
+}
+
+#entryform > .form-group > label, #entryform > .form-group > input {
+	display: block;
+	margin: 0 auto;
+}
+
+#entryform > .form-group > input[type=number] {
+	width: 120px;
+}
+
+#targetbox {
+	clear: both;
+	width: 100%;
+	margin: 20px auto;
+	text-align: center;
+}
+
+#battletable {
+	clear: both;
+}
+
+#battletable .close {
+	color: #000;
+	text-align: center;
+	float: none;
+	width: 100%;
+	cursor: pointer;
+}
+
+.bg-ultimate {
+	background-color: #FFEBEE;
+}
+
+.bg-vip {
+	background-color: #FFF3E0;
+}
+
+.bg-strong {
+	background-color: #FCE4EC;
+}
+
+.bg-champ {
+	background-color: #E8EAF6;
+}
+
+.bg-elite4 {
+	background-color: #E3F2FD;
+}
+
+.bg-trainers {
+	background-color: #D3FCFE;
+}
+
+.bg-kanto-gym, .bg-johto-gym, .bg-hoenn-gym, .bg-sinnoh-gym, .bg-unova-gym, .bg-kalos-gym, .bg-alola-gym, .bg-galar-gym, .bg-paldea-gym {
+	background-color: #FFFFCE;
+}
+
+.bg-kanto-elite-gym, .bg-johto-elite-gym, .bg-hoenn-elite-gym, .bg-sinnoh-elite-gym, .bg-unova-elite-gym, .bg-kalos-elite-gym, .bg-alola-elite-gym, .bg-galar-elite-gym, .bg-paldea-elite-gym {
+	background-color: #E3F2FD;
+}
+
+.bg-kanto-champion-gym, .bg-johto-champion-gym, .bg-hoenn-champion-gym, .bg-sinnoh-champion-gym, .bg-unova-champion-gym, .bg-kalos-champion-gym, .bg-alola-champion-gym, .bg-galar-champion-gym, .bg-paldea-champion-gym {
+	background-color: #E8EAF6;
+}
+
+.bg-wild {
+	background-color: #CEFFC6;
+}
+
+.bg-wild-pokemon {
+	background-color: #CEFFC6;
+}
+
+.borderless > tbody > tr > td, .borderless > thead > tr > th {
+	border-top: 3px solid white;
+	border-bottom: 3px solid white;
+}
+
+.input-group-text {
+	background-color: #555555;
+	color: #FFF;
+}
+
+.form-control:focus {
+	border-color: #555555;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.btn-close {
+	box-sizing: content-box;
+	width: 0.01em;
+	height: 0.01em;
+	padding: .02em .02em;
+	color: #000;
+	border: 0;
+	border-radius: .02rem;
+	opacity: .5;
+}
+
+#clearsol {
+	font-size: 20px;
+	line-height: 20px;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+ 
+	#aside {
+		width: 100%;
+		height: auto;
+		position: relative;
+	}
+
+	#bside {
+		margin-left: 0;
+		width: 100%;
+	}
+
+	#infobox, #infobox2 {
+		margin-top: 100px;
+	}
+}
